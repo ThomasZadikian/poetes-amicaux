@@ -47,7 +47,7 @@
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb ms-5 fw-semibold">
         <li class="breadcrumb-item"><a href="../index.html">Accueil</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Présentation</li>
+        <li class="breadcrumb-item active" aria-current="page">Inscription</li>
     </ol>
 </nav>
 </header>
@@ -58,7 +58,28 @@
 <body>
     <main>
         <h1 class="badge bg-success fs-1 mb-2">Inscription</h1>
-
+        <div class="container">
+        <form class="row row-cols-8">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Adresse mail</label>
+              <input type="email" class="form-control" id="mail-adress" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Nous ne transmettrons jamais votre e-mail à qui que ce soit</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Prénom</label>
+              <input type="text" class="form-control" id="firstName">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Nom de famille</label>
+                <input type="text" class="form-control" id="lastName">
+              </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="inscriptionValid">
+              <label class="form-check-label" for="inscriptionValid">Je valide mon inscription</label>
+            </div>
+            <button type="submit" class="btn btn-success">Valider</button>
+          </form>
+        </div>
     </main>
 
     <!-- JS script from Boostrap -->
