@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Présentation des poètes amicaux"
-        content="Qui sont les poètes amicaux ? Association créée en 2019, nous regroupons les fans de littérature, et principalement de poésie. Fier de plus de 80 adhérents, nous proposons également un listing des événements littéraires en France " />
+    <meta name="Contactez les poètes amicaux"
+        content="Vous souhaitez nous poser une question concernant l'association, les évènements ou le personnels ? Remplissez le formulaire suivant" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Publications des membres</title>
+    <title>Contact</title>
     <link href="../style.css" rel="stylesheet">
 </head>
 
@@ -37,7 +37,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link btn btn-nav btn-success text-white me-2 fs-6 active btn btn-nav text-white me-2 fs-6"
-                        style="--bs-bg-opacity: .7" href="Inscription.html">Inscription</a>
+                        style="--bs-bg-opacity: .7" href="Inscription.html">Contact</a>
                 </li>
             </ul>
         </div>
@@ -47,7 +47,7 @@
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb ms-5 fw-semibold">
         <li class="breadcrumb-item"><a href="../index.html">Accueil</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Inscription</li>
+        <li class="breadcrumb-item active" aria-current="page">Contact</li>
     </ol>
 </nav>
 </header>
@@ -57,27 +57,30 @@
 
 <body>
     <main>
-        <h1 class="badge bg-success fs-1 mb-2">Inscription</h1>
+        <h1 class="badge bg-success fs-1 mb-2">Contact</h1>
         <div class="container">
+            <p>
+                Vous souhaitez nous envoyer un message ? Suivez le formulaire ci-dessous et nous vous répondrons aussi rapidement que possible. 
+            </p>
         <form class="row row-cols-8">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Adresse mail</label>
-              <input type="email" class="form-control" id="mail-adress" aria-describedby="emailHelp">
+              <input type="email" class="form-control" id="mail-adress" aria-describedby="emailHelp" required="required">
               <div id="emailHelp" class="form-text">Nous ne transmettrons jamais votre e-mail à qui que ce soit</div>
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Prénom</label>
-              <input type="text" class="form-control" id="firstName">
+              <input type="text" class="form-control" id="firstName" required="required">
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Nom de famille</label>
-                <input type="text" class="form-control" id="lastName">
+                <input type="text" class="form-control" id="lastName" required="required">
               </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="inscriptionValid">
-              <label class="form-check-label" for="inscriptionValid">Je valide mon inscription</label>
-            </div>
-            <button type="submit" class="btn btn-success">Valider</button>
+              <div class="form-group">
+                <label for="textArea">Entrez votre message ci-dessous : </label>
+                <textarea class="form-control" id="testArea" rows="4"></textarea>
+              </div>
+            <button type="submit" class="btn btn-success mt-2">Envoyer</button>
           </form>
         </div>
     </main>
