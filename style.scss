@@ -15,7 +15,7 @@ $cyan:    #0dcaf0;
 
 @mixin border {
     border: 1px solid grey;
-    box-shadow: 0 4px 10px 0 rgba(22, 22, 26, 0.18);
+    box-shadow: 0 4px 10px 0 rgba(22, 22, 26, 0.18); 
 }
 
 @mixin zoom {
