@@ -2,7 +2,7 @@
 .card:hover:not(.WIP) {
   border: 1px solid grey;
   box-shadow: 0 4px 10px 0 rgba(22, 22, 26, 0.18);
-  transition: transform 0.2s ease;
+  transition: transform 0.1s ease;
   transform: scale(1.01);
 }
 
@@ -11,12 +11,20 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.btn-nav {
-  box-shadow: 0 4px 10px 0 rgba(22, 22, 26, 0.18);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+.nav-link {
+  border-radius: 5%;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: black;
 }
-.btn-nav:hover:not(.active) {
+.nav-link.active {
+  box-shadow: 5px 4px 10px 5px rgba(22, 22, 26, 0.18);
+  background-color: rgba(22, 22, 26, 0.18);
+}
+.nav-link:hover:not(.active) {
   background-color: rgba(255, 255, 255, 0.1);
+  transition: transform 0.1s ease;
+  transform: scale(1.01);
 }
 
 .nav-pills .nav-link.disabled {
