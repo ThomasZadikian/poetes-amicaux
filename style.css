@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,700;1,500&display=swap");
+div.separator {
+  width: 50rem;
+  border-bottom: 1px solid #adb5bd;
+}
+
 .nav-link {
   color: inherit;
   -webkit-text-decoration: underline 0.15em transparent;
@@ -13,6 +18,7 @@
           text-decoration: underline 0.15em;
 }
 .nav-link:hover:not(.active) {
+  text-shadow: 0 0 2px 0;
   -webkit-text-decoration-color: #495057;
           text-decoration-color: #495057;
   color: black;

@@ -31,9 +31,15 @@ $black:    #000;
         text-decoration: underline 0.15em;
     }
     &:hover:not(.active) {
+        text-shadow: 0 0 2px 0;
         text-decoration-color: $gray-700;
         color: black; 
     }
+}
+
+div.separator {
+    width: 50rem; 
+    border-bottom: 1px solid $gray-500 ;
 }
 
 .nav-link {
