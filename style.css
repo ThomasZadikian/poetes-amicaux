@@ -8,9 +8,9 @@ div.separator {
   color: inherit;
   -webkit-text-decoration: underline 0.15em transparent;
           text-decoration: underline 0.15em transparent;
-  transition: -webkit-text-decoration-color 300ms;
-  transition: text-decoration-color 300ms;
-  transition: text-decoration-color 300ms, -webkit-text-decoration-color 300ms;
+  transition: -webkit-text-decoration-color 600ms;
+  transition: text-decoration-color 600ms;
+  transition: text-decoration-color 600ms, -webkit-text-decoration-color 600ms;
   text-underline-offset: 5px;
 }
 .nav-link.active {
@@ -27,4 +27,179 @@ div.separator {
 .firstArticle {
   border-right: 1px solid #adb5bd;
   border-spacing: 50px;
+}
+
+.fadeIn {
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slidein {
+  0% {
+    margin-left: 50%;
+    opacity: 0%;
+    width: 100%;
+  }
+  50% {
+    margin-left: 5%;
+    opacity: 0%;
+    width: 100%;
+  }
+  65% {
+    margin-left: 3%;
+    opacity: 0%;
+    width: 100%;
+  }
+  100% {
+    margin-left: 0%;
+    opacity: 100%;
+    width: 100%;
+  }
+}
+@keyframes slidein {
+  0% {
+    margin-left: 50%;
+    opacity: 0%;
+    width: 100%;
+  }
+  50% {
+    margin-left: 5%;
+    opacity: 0%;
+    width: 100%;
+  }
+  65% {
+    margin-left: 3%;
+    opacity: 0%;
+    width: 100%;
+  }
+  100% {
+    margin-left: 0%;
+    opacity: 100%;
+    width: 100%;
+  }
+}
+@-webkit-keyframes zoom {
+  0% {
+    opacity: 0%;
+    scale: 0.95;
+  }
+  100% {
+    opacity: 100%;
+    scale: 1;
+  }
+}
+@keyframes zoom {
+  0% {
+    opacity: 0%;
+    scale: 0.95;
+  }
+  100% {
+    opacity: 100%;
+    scale: 1;
+  }
+}
+
+.slideIn {
+  -webkit-animation: slidein 1s;
+          animation: slidein 1s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slidein {
+  0% {
+    margin-left: 50%;
+    opacity: 0%;
+    width: 100%;
+  }
+  50% {
+    margin-left: 5%;
+    opacity: 0%;
+    width: 100%;
+  }
+  65% {
+    margin-left: 3%;
+    opacity: 0%;
+    width: 100%;
+  }
+  100% {
+    margin-left: 0%;
+    opacity: 100%;
+    width: 100%;
+  }
+}
+@keyframes zoom {
+  0% {
+    opacity: 0%;
+    scale: 0.95;
+  }
+  100% {
+    opacity: 100%;
+    scale: 1;
+  }
+}
+
+.zoom {
+  -webkit-animation: zoom 2s;
+          animation: zoom 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slidein {
+  0% {
+    margin-left: 50%;
+    opacity: 0%;
+    width: 100%;
+  }
+  50% {
+    margin-left: 5%;
+    opacity: 0%;
+    width: 100%;
+  }
+  65% {
+    margin-left: 3%;
+    opacity: 0%;
+    width: 100%;
+  }
+  100% {
+    margin-left: 0%;
+    opacity: 100%;
+    width: 100%;
+  }
+}
+@keyframes zoom {
+  0% {
+    opacity: 0%;
+    scale: 0.95;
+  }
+  100% {
+    opacity: 100%;
+    scale: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

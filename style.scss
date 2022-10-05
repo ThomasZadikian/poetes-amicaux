@@ -28,7 +28,7 @@ $black:    #000;
 @mixin underlineEffect {
     color: inherit;
     text-decoration: underline 0.15em transparent;
-    transition: text-decoration-color 300ms;
+    transition: text-decoration-color 600ms;
     text-underline-offset: 5px;
     &.active {
         text-decoration: underline 0.15em;
@@ -40,13 +40,49 @@ $black:    #000;
     }
 }
 
-@mixin hoverSection {
-    :hover{
-        border-radius: 5%;
-        transition: background-color 1s; 
-        background-color: rgba($gray-500,15%); 
+@mixin keyFrame {
+    @keyframes fadein {
+        from {
+        opacity:0;
+        }
+        to {
+        opacity:1;
+        }
+       }
+       @keyframes slidein {
+        0% {
+            margin-left: 50%;
+            opacity: 0%; 
+            width: 100%;
+          }
+        50% {
+            margin-left: 5%;
+            opacity: 0%; 
+            width: 100%;
+          }
+        65% {
+            margin-left: 3%;
+            opacity: 0%; 
+            width: 100%;
+          }
+        100% {
+            margin-left: 0%;
+            opacity: 100%;
+            width: 100%;
+          }
+       } 
+       @keyframes zoom {
+        0% {
+            opacity: 0%; 
+            scale: 0.95;
+          }
+        100% {
+            opacity: 100%;
+            scale: 1;
+
+          }
+       } 
     }
-}
 
 div.separator {
     width: 50rem; 
@@ -54,10 +90,25 @@ div.separator {
 }
 
 .nav-link {
-    @include underlineEffect
+    @include underlineEffect;
 }
 
 .firstArticle {
     border-right: 1px solid $gray-500;
     border-spacing: 50px; 
+}
+
+.fadeIn {
+    animation: fadein 1s;
+    @include keyFrame();  
+   }
+
+.slideIn {
+    animation : slidein 1s; 
+    @include keyFrame();
+}
+
+.zoom {
+    animation: zoom 2s; 
+    @include keyFrame();
 }
