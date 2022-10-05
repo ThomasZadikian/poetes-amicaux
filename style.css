@@ -22,4 +22,9 @@ div.separator {
   -webkit-text-decoration-color: #495057;
           text-decoration-color: #495057;
   color: black;
+}
+
+.firstArticle {
+  border-right: 1px solid #adb5bd;
+  border-spacing: 50px;
 }/*# sourceMappingURL=style.css.map */

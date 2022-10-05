@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,700;1,500&display=swap');
+// Varibales for the colors
 
 $blue:    #0d6efd;
 $indigo:  #6610f2;
@@ -22,6 +23,8 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
 
+// Start codding CSS style 
+
 @mixin underlineEffect {
     color: inherit;
     text-decoration: underline 0.15em transparent;
@@ -37,6 +40,14 @@ $black:    #000;
     }
 }
 
+@mixin hoverSection {
+    :hover{
+        border-radius: 5%;
+        transition: background-color 1s; 
+        background-color: rgba($gray-500,15%); 
+    }
+}
+
 div.separator {
     width: 50rem; 
     border-bottom: 1px solid $gray-500 ;
@@ -44,4 +55,9 @@ div.separator {
 
 .nav-link {
     @include underlineEffect
+}
+
+.firstArticle {
+    border-right: 1px solid $gray-500;
+    border-spacing: 50px; 
 }
