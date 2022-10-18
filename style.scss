@@ -27,8 +27,8 @@ $black:    #000;
 
 @mixin underlineEffect {
     color: inherit;
-    text-decoration: underline 0.15em transparent;
-    transition: text-decoration-color 600ms;
+    text-decoration: underline 0.15em rgba(22, 22, 26, 0.18);
+    transition: text-decoration-color 0.3s;
     text-underline-offset: 5px;
     &.active {
         text-decoration: underline 0.15em;
@@ -84,7 +84,7 @@ $black:    #000;
        } 
     }
 
-    @mixin zoom {
+    @mixin zoomHover {
         box-shadow: 0 2px 5px 0 rgba(22, 22, 26, 0.18);
         transition: transform 0.2s ease;
         transform: scale(1.01);
@@ -107,11 +107,15 @@ $black:    #000;
         }
       }
 
+
+main {
+    margin-bottom: 1.2rem;
+}
 .icone {
     animation: pulse-black 2s infinite;
 }
 
-div.separator {
+.separator {
     width: 50rem; 
     border-bottom: 1px solid $gray-500 ;
 }
@@ -120,13 +124,19 @@ div.separator {
     @include underlineEffect;
 }
 
+.breadcrumb {
+    li a{
+        @include underlineEffect(); 
+    }
+}
+
 .firstArticle {
     border-right: 1px solid $gray-500;
     border-spacing: 50px; 
 }
 
 .fadeIn {
-    animation: fadein 1s;
+    animation: fadein 1.5s;
     @include keyFrame();  
    }
 
@@ -144,6 +154,6 @@ div.separator {
     transition: transform 0.2s ease;
     border: 1px solid black;
     &:hover {
-    @include zoom; 
-}
+    @include zoomHover; 
+    }
 }
