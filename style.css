@@ -27,6 +27,10 @@
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
+.navbar {
+  box-shadow: 2px 0 15px 1px #7f8c8d;
+}
+
 main {
   margin-bottom: 1.2rem;
 }
@@ -36,9 +40,30 @@ main {
           animation: pulse-black 2s infinite;
 }
 
-.separator {
-  width: 50rem;
-  border-bottom: 1px solid #adb5bd;
+.articleTitle {
+  display: flex;
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
+}
+.articleTitle h1 {
+  align-items: flex-end;
+}
+.articleTitle img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.article {
+  transition: 1s;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 1px rgba(149, 165, 166, 0.25);
+}
+.article:hover {
+  transition: 1s;
+  box-shadow: 0 0 5px 1px rgb(89, 98, 99);
 }
 
 .nav-link {
@@ -81,14 +106,9 @@ main {
   color: black;
 }
 
-.firstArticle {
-  border-right: 1px solid #adb5bd;
-  border-spacing: 50px;
-}
-
 .fadeIn {
-  -webkit-animation: fadein 1.5s;
-          animation: fadein 1.5s;
+  -webkit-animation: fadein 0.8s;
+          animation: fadein 0.8s;
 }
 @-webkit-keyframes fadein {
   from {
@@ -217,8 +237,8 @@ main {
 }
 
 .zoom {
-  -webkit-animation: zoom 2s;
-          animation: zoom 2s;
+  -webkit-animation: zoom 0.8s;
+          animation: zoom 0.8s;
 }
 @keyframes fadein {
   from {

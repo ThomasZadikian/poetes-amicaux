@@ -107,6 +107,9 @@ $black:    #000;
         }
       }
 
+.navbar {
+    box-shadow: 2px 0 15px 1px #7f8c8d;
+}
 
 main {
     margin-bottom: 1.2rem;
@@ -115,9 +118,33 @@ main {
     animation: pulse-black 2s infinite;
 }
 
-.separator {
-    width: 50rem; 
-    border-bottom: 1px solid $gray-500 ;
+.articleTitle {
+    display: flex;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    h1 {
+        align-items: flex-end;
+    }
+
+    img {
+
+        height : 75px; 
+        width: 75px;
+        border-radius: 50%; 
+        margin-right: 2rem;
+    }
+
+}
+
+.article {
+    transition: 1s;
+    padding: 1rem; 
+    border-radius: 15px;
+    box-shadow: 0 0 5px 1px rgba(149, 165, 166,0.25);
+    &:hover {
+        transition: 1s;
+        box-shadow: 0 0 5px 1px rgb(89, 98, 99);
+    }
 }
 
 .nav-link {
@@ -130,13 +157,8 @@ main {
     }
 }
 
-.firstArticle {
-    border-right: 1px solid $gray-500;
-    border-spacing: 50px; 
-}
-
 .fadeIn {
-    animation: fadein 1.5s;
+    animation: fadein 0.8s;
     @include keyFrame();  
    }
 
@@ -146,7 +168,7 @@ main {
 }
 
 .zoom {
-    animation: zoom 2s; 
+    animation: zoom 0.8s; 
     @include keyFrame();
 }
 
