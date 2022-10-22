@@ -15,7 +15,7 @@
 <header>
 
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg fadeIn">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -24,7 +24,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <img src="../img/icone.jpg" alt="img\icone.jpg" class="ms-2 rounded end-0 icone" width="30" height="30">
+                    <img src="../img/icone.jpg" alt="img\icone.jpg" class="ms-2 rounded end-0 icone" width="30"
+                        height="30">
                     <li class="nav-item">
                         <a class="nav-link me-2 ms-2 fs-6" href="../index.html">Accueil</a>
                     </li>
@@ -50,12 +51,12 @@
         </div>
     </nav>
 
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb ms-2 mb-3 mt-3 fw-semibold fadeIn">
-        <li class="breadcrumb-item"><a href="../index.html">Accueil</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Contact</li>
-    </ol>
-</nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb ms-2 mb-3 mt-3 fw-semibold">
+            <li class="breadcrumb-item"><a href="../index.html">Accueil</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        </ol>
+    </nav>
 </header>
 
 
@@ -63,35 +64,35 @@
 
 <body>
     <main>
-        <div class="container mt-3 fadeIn">
+        <div class="container mt-3">
             <p>
-                Vous souhaitez nous envoyer un message ? Suivez le formulaire ci-dessous et nous vous répondrons aussi rapidement que possible. 
+                Vous souhaitez nous envoyer un message ? Suivez le formulaire ci-dessous et nous vous répondrons aussi
+                rapidement que possible.
             </p>
-        <form class="row row-cols-8">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Adresse e-mail</label>
-              <input type="email" class="form-control" id="mail-adress" aria-describedby="emailHelp" required="required">
-              <div id="emailHelp" class="form-text">Nous ne transmettrons jamais votre e-mail à qui que ce soit</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Prénom</label>
-              <input type="text" class="form-control" id="firstName" required="required">
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Nom de famille</label>
-                <input type="text" class="form-control" id="lastName" required="required">
-              </div>
-              <div class="form-group">
-                <label for="textArea">Entrez votre message ci-dessous : </label>
-                <textarea class="form-control" id="testArea" rows="4"></textarea>
-              </div>
-            <button type="submit" class="btn btn-success mt-2">Envoyer</button>
-          </form>
+            <form class="row row-cols-8">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Adresse e-mail</label>
+                    <input type="email" class="form-control" id="mail-adress" aria-describedby="emailHelp"
+                        required="required">
+                    <div id="emailHelp" class="form-text">Nous ne transmettrons jamais votre e-mail à qui que ce soit
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" id="firstName" required="required">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Nom de famille</label>
+                    <input type="text" class="form-control" id="lastName" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="textArea">Entrez votre message ci-dessous : </label>
+                    <textarea class="form-control" id="testArea" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success mt-2">Envoyer</button>
+            </form>
         </div>
     </main>
-
-<!-- JS script from Boostrap -->
-<script src="../bootstrap-5.2.2-dist/js/bootstrap.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     <!--Footer-->
 
@@ -114,6 +115,9 @@
                     © 2022 Copyright: Thomas Zadikian
                 </div>
     </footer>
+
+    <!--Javascript from Bootstrap-->
+    <script src="../bootstrap-5.2.2-dist/js/bootstrap.js"></script>
 </body>
 
 
