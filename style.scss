@@ -116,6 +116,15 @@ $black: #000;
     }
 }
 
+html, body {
+    height: 100%; 
+}
+
+body {
+    display: table;
+    width: 100%;
+}
+
 .navbar {
     box-shadow: 2px 0 15px 1px #7f8c8d;
 }
@@ -200,4 +209,9 @@ main {
     &:hover {
         @include zoomHover;
     }
+}
+
+footer {
+    display: table-row;
+    width: 100%;
 }
