@@ -27,6 +27,15 @@
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
+html, body {
+  height: 100%;
+}
+
+body {
+  display: table;
+  width: 100%;
+}
+
 .navbar {
   box-shadow: 2px 0 15px 1px #7f8c8d;
 }
@@ -84,6 +93,9 @@ main {
   -webkit-text-decoration-color: #495057;
           text-decoration-color: #495057;
   color: black;
+}
+.nav-link.disabled {
+  text-decoration: none;
 }
 
 .breadcrumb li a {
@@ -283,10 +295,22 @@ main {
 
 .card {
   transition: transform 0.2s ease;
-  border: 1px solid black;
+  border: none;
+  box-shadow: 0 0 5px 1px lightgray;
+}
+.card .card-title {
+  border-bottom: #000;
+}
+.card .btn {
+  background-color: none;
 }
 .card:hover {
-  box-shadow: 0 2px 5px 0 rgba(22, 22, 26, 0.18);
+  box-shadow: 0 2px 5px 0 rgba(22, 22, 26, 0.5);
   transition: transform 0.2s ease;
   transform: scale(1.01);
+}
+
+footer {
+  display: table-row;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
