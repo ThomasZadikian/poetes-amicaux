@@ -38,10 +38,91 @@ body {
 
 .navbar {
   box-shadow: 2px 0 15px 1px #7f8c8d;
+  -webkit-animation: fadein 0.8s;
+          animation: fadein 0.8s;
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes zoom {
+  0% {
+    opacity: 0%;
+    scale: 0.95;
+  }
+  100% {
+    opacity: 100%;
+    scale: 1;
+  }
+}
+@keyframes zoom {
+  0% {
+    opacity: 0%;
+    scale: 0.95;
+  }
+  100% {
+    opacity: 100%;
+    scale: 1;
+  }
+}
+
+.breadcrumb {
+  -webkit-animation: fadein 0.8s;
+          animation: fadein 0.8s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes zoom {
+  0% {
+    opacity: 0%;
+    scale: 0.95;
+  }
+  100% {
+    opacity: 100%;
+    scale: 1;
+  }
 }
 
 main {
   margin-bottom: 1.2rem;
+  -webkit-animation: fadein 0.8s;
+          animation: fadein 0.8s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes zoom {
+  0% {
+    opacity: 0%;
+    scale: 0.95;
+  }
+  100% {
+    opacity: 100%;
+    scale: 1;
+  }
 }
 
 .icone {
@@ -90,8 +171,8 @@ main {
 }
 .nav-link:hover:not(.active) {
   text-shadow: 0 0 2px 0;
-  -webkit-text-decoration-color: #495057;
-          text-decoration-color: #495057;
+  -webkit-text-decoration-color: rgba(22, 22, 26, 0.8);
+          text-decoration-color: rgba(22, 22, 26, 0.8);
   color: black;
 }
 .nav-link.disabled {
@@ -113,139 +194,9 @@ main {
 }
 .breadcrumb li a:hover:not(.active) {
   text-shadow: 0 0 2px 0;
-  -webkit-text-decoration-color: #495057;
-          text-decoration-color: #495057;
+  -webkit-text-decoration-color: rgba(22, 22, 26, 0.8);
+          text-decoration-color: rgba(22, 22, 26, 0.8);
   color: black;
-}
-
-.fadeIn {
-  -webkit-animation: fadein 0.8s;
-          animation: fadein 0.8s;
-}
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes slidein {
-  0% {
-    margin-left: 50%;
-    opacity: 0%;
-    width: 100%;
-  }
-  50% {
-    margin-left: 5%;
-    opacity: 0%;
-    width: 100%;
-  }
-  65% {
-    margin-left: 3%;
-    opacity: 0%;
-    width: 100%;
-  }
-  100% {
-    margin-left: 0%;
-    opacity: 100%;
-    width: 100%;
-  }
-}
-@keyframes slidein {
-  0% {
-    margin-left: 50%;
-    opacity: 0%;
-    width: 100%;
-  }
-  50% {
-    margin-left: 5%;
-    opacity: 0%;
-    width: 100%;
-  }
-  65% {
-    margin-left: 3%;
-    opacity: 0%;
-    width: 100%;
-  }
-  100% {
-    margin-left: 0%;
-    opacity: 100%;
-    width: 100%;
-  }
-}
-@-webkit-keyframes zoom {
-  0% {
-    opacity: 0%;
-    scale: 0.95;
-  }
-  100% {
-    opacity: 100%;
-    scale: 1;
-  }
-}
-@keyframes zoom {
-  0% {
-    opacity: 0%;
-    scale: 0.95;
-  }
-  100% {
-    opacity: 100%;
-    scale: 1;
-  }
-}
-
-.slideIn {
-  -webkit-animation: slidein 1s;
-          animation: slidein 1s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes slidein {
-  0% {
-    margin-left: 50%;
-    opacity: 0%;
-    width: 100%;
-  }
-  50% {
-    margin-left: 5%;
-    opacity: 0%;
-    width: 100%;
-  }
-  65% {
-    margin-left: 3%;
-    opacity: 0%;
-    width: 100%;
-  }
-  100% {
-    margin-left: 0%;
-    opacity: 100%;
-    width: 100%;
-  }
-}
-@keyframes zoom {
-  0% {
-    opacity: 0%;
-    scale: 0.95;
-  }
-  100% {
-    opacity: 100%;
-    scale: 1;
-  }
 }
 
 .zoom {
@@ -258,28 +209,6 @@ main {
   }
   to {
     opacity: 1;
-  }
-}
-@keyframes slidein {
-  0% {
-    margin-left: 50%;
-    opacity: 0%;
-    width: 100%;
-  }
-  50% {
-    margin-left: 5%;
-    opacity: 0%;
-    width: 100%;
-  }
-  65% {
-    margin-left: 3%;
-    opacity: 0%;
-    width: 100%;
-  }
-  100% {
-    margin-left: 0%;
-    opacity: 100%;
-    width: 100%;
   }
 }
 @keyframes zoom {
@@ -313,4 +242,24 @@ main {
 footer {
   display: table-row;
   width: 100%;
+  -webkit-animation: fadein 0.8s;
+          animation: fadein 0.8s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes zoom {
+  0% {
+    opacity: 0%;
+    scale: 0.95;
+  }
+  100% {
+    opacity: 100%;
+    scale: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

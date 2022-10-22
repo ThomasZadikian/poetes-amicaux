@@ -13,7 +13,7 @@
 
     &:hover:not(.active) {
         text-shadow: 0 0 2px 0;
-        text-decoration-color: $gray-700;
+        text-decoration-color: rgba(22, 22, 26, 0.8);
         color: black;
     }
 }
@@ -26,32 +26,6 @@
 
         to {
             opacity: 1;
-        }
-    }
-
-    @keyframes slidein {
-        0% {
-            margin-left: 50%;
-            opacity: 0%;
-            width: 100%;
-        }
-
-        50% {
-            margin-left: 5%;
-            opacity: 0%;
-            width: 100%;
-        }
-
-        65% {
-            margin-left: 3%;
-            opacity: 0%;
-            width: 100%;
-        }
-
-        100% {
-            margin-left: 0%;
-            opacity: 100%;
-            width: 100%;
         }
     }
 
@@ -103,10 +77,19 @@ body {
 
 .navbar {
     box-shadow: 2px 0 15px 1px #7f8c8d;
+    animation: fadein 0.8s;
+    @include keyFrame();
+}
+
+.breadcrumb {
+    animation: fadein 0.8s;
+    @include keyFrame();
 }
 
 main {
     margin-bottom: 1.2rem;
+    animation: fadein 0.8s;
+    @include keyFrame();
 }
 
 .icone {
@@ -157,16 +140,6 @@ main {
     }
 }
 
-.fadeIn {
-    animation: fadein 0.8s;
-    @include keyFrame();
-}
-
-.slideIn {
-    animation: slidein 1s;
-    @include keyFrame();
-}
-
 .zoom {
     animation: zoom 0.8s;
     @include keyFrame();
@@ -190,4 +163,6 @@ main {
 footer {
     display: table-row;
     width: 100%;
+    animation: fadein 0.8s;
+    @include keyFrame();
 }
