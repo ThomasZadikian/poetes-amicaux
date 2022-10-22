@@ -94,7 +94,7 @@ $black: #000;
 }
 
 @mixin zoomHover {
-    box-shadow: 0 2px 5px 0 rgba(22, 22, 26, 0.18);
+    box-shadow: 0 2px 5px 0 rgba(22, 22, 26, 0.5);
     transition: transform 0.2s ease;
     transform: scale(1.01);
 }
@@ -161,6 +161,9 @@ main {
 
 .nav-link {
     @include underlineEffect;
+    &.disabled {
+        text-decoration: none;
+    }
 }
 
 .breadcrumb {
@@ -186,8 +189,14 @@ main {
 
 .card {
     transition: transform 0.2s ease;
-    border: 1px solid black;
-
+    border: none;
+    box-shadow: 0 0 5px 1px lightgray;
+    .card-title {
+        border-bottom: #000;
+    }
+    .btn {
+        background-color: none;
+    }
     &:hover {
         @include zoomHover;
     }
